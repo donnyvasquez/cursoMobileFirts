@@ -84,7 +84,7 @@ header .hero .hero--cta {
     display: block;
     white-space: nowrap;
     box-shadow: 0 0.2rem 0.5rem -0.1rem rgba(0, 0, 0, 0.2);
-    font-size: 0.88rem;
+    font-size: 0.875rem;
     font-weight: bold;
     text-decoration: none;
     color: var(--black);
@@ -106,9 +106,53 @@ main {
     text-align: center;
 }
 
+#exchange-container .back-ground-img {
+    height: 15rem;
+    background: url(/assets/img/bitcoin.svg) no-repeat center;
+    background-size: contain;
+}
+
 .exchange-container--title {
     max-width: 56.25rem;
     padding: 5%;
     margin: auto;
     line-height: 1;
+}
+
+.exchange-container--text {
+    font-size: 0.875rem;
+    color: #747474;
+}
+
+.exchange--table {
+    padding: 2rem 15%;
+}
+
+.exchange--table h3 {
+    color: var(--primary);
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.exchange--table table {
+    border-radius: 0.75rem;
+    background-color: var(--just-white);
+    width: 100%;
+    color: #747474;
+    font-size: 0.875rem;
+    border-collapse: collapse;
+}
+
+.exchange--table table td {
+    padding: 0.5rem;
+    text-align: left;
+    border: 2px solid var(--off-white);
+}
+
+.exchange--table table tr td:last-child {
+    text-align: center;
+}
+
+.exchange--table table td img {
+    margin-left: 1rem;
 }
