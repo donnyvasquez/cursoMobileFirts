@@ -1,0 +1,114 @@
+/*
+0. Variables
+1. Posicionamiento
+2. Modelo de caja
+3. Tipografía
+4. Visuales
+5. Otros
+*/
+
+:root {
+    /* Variables de colores */
+    --primary: #f7931a;
+    --soft-primary: #ffe9d5;
+    --secondary: #1a9af7;
+    --soft-secondary: #e7f5ff;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "DM Sans", sans-serif;
+}
+
+
+/*
+ * Posicionamiento
+ */
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    padding: 3.5rem 0;
+    text-align: center;
+    background: linear-gradient(45deg, var(--primary), var(--black));
+}
+
+header .brand {
+    width: 50%;
+    max-width: 20rem;
+    height: auto;
+    margin: auto;
+}
+
+header .hero {
+    margin: 3rem 0;
+    padding: 1rem;
+    max-width: 90%;
+    margin: auto;
+    color: var(--just-white);
+}
+
+header .hero .hero--title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+}
+
+header .hero .hero--text {
+    font-size: 0.88rem;
+    margin-top: 2rem;
+}
+
+header .hero .hero--cta {
+    border-radius: 0.2rem;
+    background-color: var(--off-white);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    display: block;
+    white-space: nowrap;
+    box-shadow: 0 0.2rem 0.5rem -0.1rem rgba(0, 0, 0, 0.2);
+    font-size: 0.88rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+    display: flex;
+}
+
+header .hero .hero--cta:after {
+    display: inline-block;
+    content: " ";
+    width: 1rem;
+    height: 1rem;
+    margin-left: 1rem;
+    background: url(/assets/icons/down-arrow.svg) no-repeat center;
+}
+
+main {
+    background-color: var(--off-white);
+    padding: 4rem 1rem 2rem 1rem;
+    text-align: center;
+}
+
+.exchange-container--title {
+    max-width: 56.25rem;
+    padding: 5%;
+    margin: auto;
+    line-height: 1;
+}
