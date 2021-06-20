@@ -74,7 +74,7 @@ header .hero .hero--text {
 }
 
 header .hero .hero--cta {
-    border-radius: 0.2rem;
+    border-radius: 0.35rem;
     background-color: var(--off-white);
     position: absolute;
     top: 100%;
@@ -106,6 +106,14 @@ main {
     text-align: center;
 }
 
+main>section {
+    margin: 0 -1rem;
+}
+
+#exchange-container {
+    padding-bottom: 2rem;
+}
+
 #exchange-container .back-ground-img {
     height: 15rem;
     background: url(../img/bitcoin.svg) no-repeat center;
@@ -122,6 +130,7 @@ main {
 .exchange-container--text {
     font-size: 0.875rem;
     color: #747474;
+    padding: 0 1rem;
 }
 
 .exchange--table {
@@ -132,10 +141,15 @@ main {
     color: var(--primary);
     text-align: left;
     margin-bottom: 0.5rem;
+    padding-left: 0.75rem;
+}
+
+.exchange--table__blue h3 {
+    color: var(--secondary);
 }
 
 .exchange--table table {
-    border-radius: 0.75rem;
+    border-radius: 0.85rem;
     background-color: var(--just-white);
     width: 100%;
     color: #747474;
@@ -144,9 +158,13 @@ main {
 }
 
 .exchange--table table td {
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
     text-align: left;
     border: 2px solid var(--off-white);
+}
+
+.exchange--table table tr td:first-child {
+    font-weight: bold;
 }
 
 .exchange--table table tr td:last-child {
@@ -155,4 +173,87 @@ main {
 
 .exchange--table table td img {
     margin-left: 1rem;
+}
+
+.help-text {
+    font-size: 0.875rem;
+    color: var(--black);
+    border-radius: 0.75rem;
+    background-color: var(--soft-primary);
+    margin-top: 1rem;
+    padding: 0.5rem 0rem;
+}
+
+.exchange--table__blue .help-text {
+    background-color: var(--soft-secondary);
+}
+
+.help-text strong {
+    color: var(--warm-black);
+    font-size: 1rem;
+}
+
+#profit-container {
+    background-color: var(--warm-black);
+    color: var(--off-white);
+}
+
+#profit-container:before {
+    display: block;
+    content: url("../icons/batata.svg");
+    transform: translateY(-50%);
+}
+
+.profit--title {
+    max-width: 56.25rem;
+    padding: 2rem 5%;
+    margin: auto;
+    line-height: 1;
+}
+
+.profit--text {
+    font-size: 0.875rem;
+    color: #747474;
+    padding: 0 1rem;
+}
+
+.profit--cards-container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+}
+
+.profit--card {
+    background-color: var(--black);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.05rem rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.profit--card p {
+    font-size: 0.875rem;
+    color: #747474;
+    padding: 0.5rem 0;
+}
+
+.profit--card-icon {
+    width: 2rem;
+    height: 2rem;
+    background: no-repeat center;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.time-icon {
+    background-image: url("../icons/clock.svg");
+}
+
+.eye-icon {
+    background-image: url("../icons/eye.svg");
+}
+
+.dollar-icon {
+    background-image: url("../icons/dollar-sign.svg");
 }
