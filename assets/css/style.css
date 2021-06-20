@@ -28,7 +28,7 @@
 
 html {
     font-family: "DM Sans", sans-serif;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 
@@ -121,6 +121,15 @@ main>section {
     background-size: contain;
 }
 
+.exchange-container--table {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1.5rem 0;
+    justify-content: start;
+    overscroll-behavior-x: scroll;
+    scroll-snap-type: x proximity;
+}
+
 .exchange-container--title {
     max-width: 56.25rem;
     padding: 2rem 5%;
@@ -135,7 +144,17 @@ main>section {
 }
 
 .exchange--table {
-    padding: 2rem 15%;
+    padding: 0 1rem;
+    scroll-snap-align: center;
+    min-width: 20rem;
+}
+
+.exchange--table:first-child {
+    padding-left: 2rem;
+}
+
+.exchange--table:last-child {
+    padding-right: 2rem;
 }
 
 .exchange--table h3 {
