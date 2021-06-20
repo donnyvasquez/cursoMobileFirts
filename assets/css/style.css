@@ -28,6 +28,7 @@
 
 html {
     font-family: "DM Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -224,10 +225,15 @@ main>section {
     gap: 1rem;
 }
 
-.profit--card {
-    background-color: var(--black);
+.card {
     padding: 1rem;
     border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.05rem rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.profit--card {
+    background-color: var(--black);
     box-shadow: 0 0.125rem 0.05rem rgba(0, 0, 0, 0.2);
     text-align: left;
 }
@@ -256,4 +262,122 @@ main>section {
 
 .dollar-icon {
     background-image: url("../icons/dollar-sign.svg");
+}
+
+#knowit-container {
+    background: var(--primary) url("../img/bitcoinbaby.jpg") no-repeat center;
+    background-size: cover;
+    color: var(--just-white);
+    padding: 4rem 0;
+    height: 50vh;
+}
+
+#plans-container {
+    /* padding: 1rem; */
+}
+
+.plans--title {
+    max-width: 56.25rem;
+    padding: 2rem 5%;
+    margin: auto;
+    line-height: 1;
+}
+
+.plans--text {
+    font-size: 0.875rem;
+    color: #747474;
+    padding: 0 1rem;
+}
+
+.slide-container {
+    margin-top: 2rem;
+    display: flex;
+    overflow-x: scroll;
+    padding: 1.5rem 0;
+    overscroll-behavior-x: scroll;
+    scroll-snap-type: x proximity;
+    justify-content: flex-start;
+}
+
+#plans-container .card--slide {
+    background-color: var(--just-white);
+    box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.15);
+    padding: 2rem 1.5rem 1.5rem;
+    min-width: 14rem;
+    max-width: 20rem;
+    min-height: 10rem;
+    scroll-snap-align: center;
+    margin: 0.5rem;
+}
+
+#plans-container .card--slide:first-child {
+    margin-left: 1.5rem;
+}
+
+#plans-container .card--slide:last-child {
+    margin-right: 1.5rem;
+}
+
+.card--slide .card--cta {
+    border: 0.15rem solid var(--primary);
+    border-radius: 0.35rem;
+    background-color: var(--off-white);
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+    white-space: nowrap;
+    box-shadow: 0 0.2rem 0.5rem -0.1rem rgba(0, 0, 0, 0.2);
+    font-size: 0.875rem;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+    display: flex;
+}
+
+.card--slide .card--cta:after {
+    display: inline-block;
+    content: " ";
+    width: 1rem;
+    height: 1rem;
+    margin-left: 1rem;
+    background: url(../icons/orange-right-arrow.svg) no-repeat center;
+}
+
+.plans-card--feature {
+    display: inline-block;
+    font-size: 00.88rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--primary);
+    color: var(--just-white);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-style: normal;
+}
+
+.card-body h3 {
+    font-size: 1rem;
+}
+
+.plans--price {
+    font-size: 4rem;
+    font-weight: bolder;
+    letter-spacing: -5px;
+}
+
+.plans--price span {
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-top: 1rem;
+    color: var(--warm-black);
+}
+
+.plans--note {
+    color: var(--grey);
+    font-size: 00.85rem;
 }

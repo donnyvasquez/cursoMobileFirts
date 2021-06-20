@@ -17,7 +17,7 @@
         <div class="hero">
             <h1 class="hero--title">La próxima revolución en el intercambio de criptomonedas</h1>
             <p class="hero--text">BatataBit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-            <a href="#" class="hero--cta">Conoce nuestros planes</a>
+            <a href="#plans-container" class="hero--cta">Conoce nuestros planes</a>
         </div>
     </header>
     <main>
@@ -103,10 +103,52 @@
                 </article>
             </section>
         </section>
-        <section></section>
-        <section></section>
+        <section id="knowit-container">
+            <h2>Conócelo hoy</h2>
+        </section>
+        <section id="plans-container">
+            <h2 class="plans--title">Escoge el plan que mejor se ajustre a ti.</h2>
+            <p class="plans--text">Cualquier plan te da acceso completo a nuestra plataforma.</p>
+            <section class="slide-container">
+                <article class="card card--slide">
+                    <div class="card-body">
+                        <h3>Pago Mensual</h3>
+                        <p class="plans--price"><span>$</span> 110</p>
+                        <p class="plans--note">* Pagas de forma más cómoda, aunque gasta más.</p>
+                        <button class="card--cta">Escoger este</button>
+                    </div>
+                </article>
+                <article class="card card--slide">
+                    <i class="plans-card--feature">Recomendado</i>
+                    <div class="card-body">
+                        <h3>Pago Anual</h3>
+                        <p class="plans--price"><span>$</span> 99</p>
+                        <p class="plans--note">* Ahorras $129 comparado al plan mensual.</p>
+                        <button class="card--cta">Escoger este</button>
+                    </div>
+                </article>
+                <article class="card card--slide">
+                    <div class="card-body">
+                        <h3>Pago Trianual</h3>
+                        <p class="plans--price"><span>$</span> 90</p>
+                        <p class="plans--note">* Ahorras $324 comparado al plan anual.</p>
+                        <button class="card--cta">Escoger este</button>
+                    </div>
+                </article>
+            </section>
+        </section>
     </main>
     <footer></footer>
+    <script>
+        function scrollToBottom() {
+            var element = document.getElementsByTagName('body')[0];
+            console.log(element);
+            element.scrollIntoView({
+                block: "end"
+            });
+        }
+        window.onload = scrollToBottom;
+    </script>
 </body>
 
 </html>
