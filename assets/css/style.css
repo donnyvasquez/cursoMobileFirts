@@ -223,6 +223,8 @@ main>section {
     display: grid;
     grid-template-columns: auto;
     gap: 1rem;
+    max-width: 55rem;
+    margin: auto;
 }
 
 .card {
@@ -272,10 +274,6 @@ main>section {
     height: 50vh;
 }
 
-#plans-container {
-    /* padding: 1rem; */
-}
-
 .plans--title {
     max-width: 56.25rem;
     padding: 2rem 5%;
@@ -290,13 +288,14 @@ main>section {
 }
 
 .slide-container {
-    margin-top: 2rem;
     display: flex;
     overflow-x: scroll;
     padding: 1.5rem 0;
     overscroll-behavior-x: scroll;
     scroll-snap-type: x proximity;
-    justify-content: flex-start;
+    max-width: 55rem;
+    margin: auto;
+    margin-top: 2rem;
 }
 
 #plans-container .card--slide {
@@ -380,4 +379,31 @@ main>section {
 .plans--note {
     color: var(--grey);
     font-size: 00.85rem;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--primary);
+    padding: 3rem;
+    font-size: 00.88rem;
+    align-items: center;
+}
+
+footer>section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li {
+    list-style: none;
+    padding: 0.125rem;
+}
+
+footer a {
+    font-weight: bold;
+    color: var(--just-white);
+    text-decoration: none;
 }
