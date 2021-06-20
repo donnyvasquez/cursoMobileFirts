@@ -113,6 +113,7 @@ main>section {
 
 #exchange-container {
     padding-bottom: 2rem;
+    width: 100%;
 }
 
 #exchange-container .back-ground-img {
@@ -128,6 +129,8 @@ main>section {
     justify-content: start;
     overscroll-behavior-x: scroll;
     scroll-snap-type: x proximity;
+    max-width: 55rem;
+    margin: auto;
 }
 
 .exchange-container--title {
